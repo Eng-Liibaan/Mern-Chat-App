@@ -17,7 +17,7 @@ server.use('/api/message', MessageRouter)
 const path = require('path')
 server.use(express.static(path.join(__dirname,"../frontend/dist")))
 server.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname,"../fronted","dist","index.html")) 
+  res.sendFile(path.join(__dirname,"../frontend","dist","index.html")) 
 
 })
 
